@@ -11,6 +11,10 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./css/normalize.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.1/dist/fancybox/fancybox.css"
+    />
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
@@ -21,6 +25,19 @@
           <img src="./img/logo.svg" alt="Logo" />
         </a>
         <nav class="nav">
+          <button class="m-menu">
+            <svg
+              width="15"
+              height="9"
+              viewBox="0 0 15 9"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <line y1="0.5" x2="15" y2="0.5" stroke="white" />
+              <line y1="4.5" x2="15" y2="4.5" stroke="white" />
+              <line y1="8.5" x2="15" y2="8.5" stroke="white" />
+            </svg>
+          </button>
           <ul class="menu">
             <li class="menu-item">
               <a href="#" class="menu-link">Главная</a>
@@ -72,7 +89,15 @@
             </div>
           </div>
         </div>
-        <a href="#" class="film-trailer">
+
+        <a
+          href="https://www.youtube.com/watch?v=PUdyuKaGQd4"
+          data-fancybox
+          data-width="100%"
+          data-height="100%"
+          href = "#"
+          class="film-trailer"
+        >
           <svg
             width="100"
             height="100"
@@ -159,8 +184,6 @@
     <div class="scheme container">
       <svg
         class="scheme-svg"
-        width="1170"
-        height="600"
         viewBox="0 0 1170 600"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
@@ -728,6 +751,7 @@
       </div>
       <a href="#" class="button button-pay">Перейти к оплате</a>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.1/dist/fancybox/fancybox.umd.js"></script>
     <script src="./js/scripts.js"></script>
   </body>
 </html>
